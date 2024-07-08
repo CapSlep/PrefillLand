@@ -14,10 +14,10 @@ const imageBase = baseUrl ?? landingUrl;
 
   const sizes = {
     enabled: false,
-    selectText: "Size: ",
+    selectText: "Taille : ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
-  // I FILL THIS INFO IN MAIN.JS
+  // JE REMPLIS CES INFORMATIONS DANS MAIN.JS
   const mainProduct = {
     header: "",
     name: "",
@@ -26,9 +26,9 @@ const imageBase = baseUrl ?? landingUrl;
     selectText: "",
     coupon: "",
     text: `,
-Congratulations!<br><br>
-You participated in the Stanley promotion: you have the opportunity to buy the STANLEY QUENCHER H2.0 ice mold thermos for only <b>$37</b>!
-`,
+  Félicitations!<br><br>
+  Vous avez participé à la promotion Stanley : vous avez l'opportunité d'acheter le thermos STANLEY QUENCHER H2.0 avec moule à glace pour seulement <b>37$</b>!
+  `,
   };
 
   const notifications = [
@@ -49,214 +49,215 @@ You participated in the Stanley promotion: you have the opportunity to buy the S
   const reviewsArr = [
     {
       name: "Mateo",
-      time: "A day ago",
-      header: "It's incredible!",
+      time: "Il y a un jour",
+      header: "C'est incroyable !",
       product: "26468782",
-      review: "As a football fan for many years, I was very surprised by the quality of the Spain national team jersey at a very reasonable price 😊",
+      review: "En tant que fan de football depuis de nombreuses années, j'ai été très surpris par la qualité du maillot de l'équipe nationale d'Espagne à un prix très raisonnable 😊",
     },
     {
       name: "Lucas",
-      time: "Two days ago",
-      header: "Great! I have no words.",
+      time: "Il y a deux jours",
+      header: "Génial ! Je n'ai pas de mots.",
       product: "26468789",
-      review: "I decided to buy the Spain national team jersey for the first time and now I enjoy it every time I support my team, thank you.",
+      review: "J'ai décidé d'acheter le maillot de l'équipe nationale d'Espagne pour la première fois et maintenant je l'apprécie chaque fois que je soutiens mon équipe, merci.",
     },
     {
       name: "Valentina",
-      time: "Two days ago",
-      header: "Simply great.",
+      time: "Il y a deux jours",
+      header: "Simplement génial.",
       product: "26468785",
-      review: "The quality of the jersey is incredible, and the size is perfect! Thank you, I will recommend it to my friends.",
+      review: "La qualité du maillot est incroyable, et la taille est parfaite ! Merci, je le recommanderai à mes amis.",
     },
     {
       name: "Santiago",
-      time: "Four days ago",
-      header: "I like it",
-      review: "Honestly, I love watching football, and the new Spain national team jersey was exactly what I needed.",
+      time: "Il y a quatre jours",
+      header: "J'aime",
+      review: "Honnêtement, j'adore regarder le football, et le nouveau maillot de l'équipe nationale d'Espagne était exactement ce dont j'avais besoin.",
     },
     {
       name: "Martina",
-      time: "Seven days ago",
-      header: "Wow, I love this product!",
+      time: "Il y a sept jours",
+      header: "Waouh, j'adore ce produit !",
       product: "26468784",
-      review: "At first I thought the jersey was expensive, but fortunately, I bought it and now I enjoy the best matches with it. Thank you!",
+      review: "Au début, je pensais que le maillot était cher, mais heureusement, je l'ai acheté et maintenant je profite des meilleurs matchs avec lui. Merci !",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "REVIEWS AND RATINGS",
+    rr: "AVIS ET NOTES",
     percent: "99%",
-    rec: "Comments on this promotion",
+    rec: "Commentaires sur cette promotion",
   };
 
   const questions = {
-    _of: "Question {1} of {2}: ",
+    _of: "Question {1} sur {2} : ",
     arr: [
       {
-        q: "Have you ever ordered McDonald's products?",
+        q: "Avez-vous déjà commandé des produits McDonald's ?",
         a: [
-          "Yes, I order frequently",
-          "Yes, I order rarely",
-          "I have never ordered",
+          "Oui, je commande fréquemment",
+          "Oui, je commande rarement",
+          "Je n'ai jamais commandé",
         ],
       },
       {
-        q: "Should McDonald's continue with this type of advertising campaigns?",
-        a: ["Yes, of course!", "Yes, but change the promotional menu", "No"],
+        q: "McDonald's devrait-il continuer avec ce type de campagnes publicitaires ?",
+        a: ["Oui, bien sûr !", "Oui, mais changez le menu promotionnel", "Non"],
       },
       {
-        q: "Would you recommend our products to your friends?",
-        a: ["Yes", "No"],
+        q: "Recommanderiez-vous nos produits à vos amis ?",
+        a: ["Oui", "Non"],
       },
     ],
   };
 
   const check = {
-    title: "Your answer will be reviewed",
+    title: "Votre réponse sera examinée",
     arr: [
-      "You have answered question 3 of 3",
-      "Your IP address does not show previous orders",
-      "Your answer has been verified",
+      "Vous avez répondu à la question 3 sur 3",
+      "Votre adresse IP ne montre pas de commandes antérieures",
+      "Votre réponse a été vérifiée",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Thank you for participating in the survey!",
-        button: "Try your luck",
+        header: "Merci d'avoir participé à l'enquête !",
+        button: "Tentez votre chance",
         text: `
-<center>
-    To get the McDonald's promotional menu, you must choose the correct gift box.
-    <br><br>
-    You have 3 attempts, good luck!
-</center>
-            `,
+  <center>
+      Pour obtenir le menu promotionnel de McDonald's, vous devez choisir la bonne boîte cadeau.
+      <br><br>
+      Vous avez 3 tentatives, bonne chance !
+  </center>
+              `,
       },
     },
     first: {
       texts: {
-        header: "Oh, no...",
-        button: "Try again",
+        header: "Oh, non...",
+        button: "Réessayez",
         text: `
-<center>
-    Unfortunately, this gift is empty. You have two attempts left, good luck!
-</center>
-            `,
+  <center>
+      Malheureusement, ce cadeau est vide. Il vous reste deux tentatives, bonne chance !
+  </center>
+              `,
       },
     },
     win: {
       texts: {
-        header: "England (Men's Team) 2024/25 Stadium Home",
-        button: "Get the coupon",
+        header: "Angleterre (Équipe masculine) 2024/25 Maillot domicile du stade",
+        button: "Obtenez le coupon",
         text: `
-<center>
-    <p style="color: #ffffff"></p>
-    <br>
-    Click "Get the coupon", complete the form and pay the order.
-    <br><br>
-    Receive a text message with the coupon and instructions to activate it.
-    <br><br>
-    The coupon can be activated at any time and does not require additional payment.
-</center>
-            `,
+  <center>
+      <p style="color: #ffffff"></p>
+      <br>
+      Cliquez sur "Obtenez le coupon", complétez le formulaire et payez la commande.
+      <br><br>
+      Recevez un SMS avec le coupon et des instructions pour l'activer.
+      <br><br>
+      Le coupon peut être activé à tout moment et ne nécessite aucun paiement supplémentaire.
+  </center>
+              `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "Personal information",
+      title: "Informations personnelles",
       fields: {
         name: {
           enabled: true,
-          field: "First Name",
+          field: "Prénom",
         },
         family: {
           enabled: true,
-          field: "Last Name",
+          field: "Nom de famille",
         },
         phone: {
           enabled: true,
-          field: "Phone Number",
+          field: "Numéro de téléphone",
         },
         email: {
           enabled: true,
-          field: "Email Address",
+          field: "Adresse e-mail",
         },
       },
     },
     delivery: {
-      title: "Delivery",
+      title: "Livraison",
       fields: {
         city: {
           enabled: true,
-          field: "City",
+          field: "Ville",
         },
         address: {
           enabled: true,
-          field: "Delivery Address",
+          field: "Adresse de livraison",
         },
         zip: {
           enabled: true,
-          field: "Postal Code",
+          field: "Code postal",
         },
       },
     },
     payment: {
-      title: "Payment Methods",
-      creditCard: "Online payment by credit card",
+      title: "Méthodes de paiement",
+      creditCard: "Paiement en ligne par carte de crédit",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Order Details",
+      title: "Détails de la commande",
       oldPrice: "€99.99",
       newPrice: "€9.99",
-      size: "Size",
+      size: "Taille",
       subTotal: {
-        title: "Subtotal",
+        title: "Sous-total",
         amount: "€9.99",
       },
       delivery: {
-        title: "Delivery",
+        title: "Livraison",
         amount: "€0.00",
       },
       total: {
         title: "Total",
         amount: "€9.99",
       },
-      checkoutButton: "Pay your order",
+      checkoutButton: "Payez votre commande",
     },
   };
+
 
 
   const products = [
     {
       id: "26468784",
-      name: "England (Men's Team) 2024/25 Stadium Home",
-      miniImg: "./src/img/shirt-en.jpg",
-      images: ["./src/img/shirt-en.jpg"],
+      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
+      miniImg: "./src/img/shirt-fr.jpg",
+      images: ["./src/img/shirt-fr.jpg"],
     },
     {
       id: "26468782",
-      name: "England (Men's Team) 2024/25 Stadium Home",
-      miniImg: "./src/img/shirt-en.jpg",
-      images: ["./src/img/shirt-en.jpg"],
+      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
+      miniImg: "./src/img/shirt-fr.jpg",
+      images: ["./src/img/shirt-fr.jpg"],
     },
     {
       id: "26468783",
-      name: "England (Men's Team) 2024/25 Stadium Home",
-      miniImg: "./src/img/shirt-en.jpg",
-      images: ["./src/img/shirt-en.jpg"],
+      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
+      miniImg: "./src/img/shirt-fr.jpg",
+      images: ["./src/img/shirt-fr.jpg"],
     },
   ];
 
   const footer = {
-    cr: "©© 2024  Nike, Inc. All rights reserved",
+    cr: "© 2024  Nike, Inc. Tous droits réservés",
   };
 
   const pathImgBox = {
