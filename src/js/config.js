@@ -14,10 +14,10 @@ const imageBase = baseUrl ?? landingUrl;
 
   const sizes = {
     enabled: false,
-    selectText: "Taille : ",
+    selectText: "Maat: ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
-  // JE REMPLIS CES INFORMATIONS DANS MAIN.JS
+  // IK VUL DEZE INFORMATIE IN IN MAIN.JS
   const mainProduct = {
     header: "",
     name: "",
@@ -26,8 +26,8 @@ const imageBase = baseUrl ?? landingUrl;
     selectText: "",
     coupon: "",
     text: `,
-  Félicitations!<br><br>
-  Vous avez participé à la promotion Stanley : vous avez l'opportunité d'acheter le thermos STANLEY QUENCHER H2.0 avec moule à glace pour seulement <b>37$</b>!
+  Gefeliciteerd!<br><br>
+  U heeft deelgenomen aan de Stanley promotie: u heeft de kans om de STANLEY QUENCHER H2.0 thermos met ijsmal te kopen voor slechts <b>37$</b>!
   `,
   };
 
@@ -35,130 +35,130 @@ const imageBase = baseUrl ?? landingUrl;
     // {
     // 	user: "Manuel S*****",
     // 	location: "Barcelona, España",
-    // 	action: "¡Acabo de recibir la joya por 1,95 euros!",
-    // 	timeago: "hace 15 segundos",
+    // 	action: "Ik heb zojuist het sieraad ontvangen voor 1,95 euro!",
+    // 	timeago: "15 seconden geleden",
     // },
     // {
     // 	user: "Carlos B******",
     // 	location: "Madrid, España",
-    // 	action: "¡Acabo de recibir la joya por 1,95 euros!",
-    // 	timeago: "hace 25 segundos",
+    // 	action: "Ik heb zojuist het sieraad ontvangen voor 1,95 euro!",
+    // 	timeago: "25 seconden geleden",
     // },
   ];
 
   const reviewsArr = [
     {
       name: "Mateo",
-      time: "Il y a un jour",
-      header: "C'est incroyable !",
+      time: "Een dag geleden",
+      header: "Het is ongelooflijk!",
       product: "26468782",
-      review: "En tant que fan de football depuis de nombreuses années, j'ai été très surpris par la qualité du maillot de l'équipe nationale d'Espagne à un prix très raisonnable 😊",
+      review: "Als voetbalfan sinds vele jaren was ik zeer verrast door de kwaliteit van het nationale teamshirt van Spanje voor een zeer redelijke prijs 😊",
     },
     {
       name: "Lucas",
-      time: "Il y a deux jours",
-      header: "Génial ! Je n'ai pas de mots.",
+      time: "Twee dagen geleden",
+      header: "Geweldig! Ik heb geen woorden.",
       product: "26468789",
-      review: "J'ai décidé d'acheter le maillot de l'équipe nationale d'Espagne pour la première fois et maintenant je l'apprécie chaque fois que je soutiens mon équipe, merci.",
+      review: "Ik besloot voor het eerst het nationale teamshirt van Spanje te kopen en nu geniet ik ervan elke keer als ik mijn team steun, dank je.",
     },
     {
       name: "Valentina",
-      time: "Il y a deux jours",
-      header: "Simplement génial.",
+      time: "Twee dagen geleden",
+      header: "Gewoon geweldig.",
       product: "26468785",
-      review: "La qualité du maillot est incroyable, et la taille est parfaite ! Merci, je le recommanderai à mes amis.",
+      review: "De kwaliteit van het shirt is ongelooflijk, en de maat is perfect! Dank je, ik zal het aan mijn vrienden aanbevelen.",
     },
     {
       name: "Santiago",
-      time: "Il y a quatre jours",
-      header: "J'aime",
-      review: "Honnêtement, j'adore regarder le football, et le nouveau maillot de l'équipe nationale d'Espagne était exactement ce dont j'avais besoin.",
+      time: "Vier dagen geleden",
+      header: "Ik vind het leuk",
+      review: "Eerlijk gezegd hou ik van voetbal kijken, en het nieuwe nationale teamshirt van Spanje was precies wat ik nodig had.",
     },
     {
       name: "Martina",
-      time: "Il y a sept jours",
-      header: "Waouh, j'adore ce produit !",
+      time: "Zeven dagen geleden",
+      header: "Wauw, ik hou van dit product!",
       product: "26468784",
-      review: "Au début, je pensais que le maillot était cher, mais heureusement, je l'ai acheté et maintenant je profite des meilleurs matchs avec lui. Merci !",
+      review: "Eerst dacht ik dat het shirt duur was, maar gelukkig heb ik het gekocht en nu geniet ik van de beste wedstrijden met het. Dank je!",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "AVIS ET NOTES",
+    rr: "BEOORDELINGEN EN RECENSIES",
     percent: "99%",
-    rec: "Commentaires sur cette promotion",
+    rec: "Opmerkingen over deze promotie",
   };
 
   const questions = {
-    _of: "Question {1} sur {2} : ",
+    _of: "Vraag {1} van {2}: ",
     arr: [
       {
-        q: "Avez-vous déjà commandé des produits McDonald's ?",
+        q: "Heeft u ooit producten van McDonald's besteld?",
         a: [
-          "Oui, je commande fréquemment",
-          "Oui, je commande rarement",
-          "Je n'ai jamais commandé",
+          "Ja, ik bestel vaak",
+          "Ja, ik bestel zelden",
+          "Ik heb nog nooit besteld",
         ],
       },
       {
-        q: "McDonald's devrait-il continuer avec ce type de campagnes publicitaires ?",
-        a: ["Oui, bien sûr !", "Oui, mais changez le menu promotionnel", "Non"],
+        q: "Moet McDonald's doorgaan met dit soort reclamecampagnes?",
+        a: ["Ja, natuurlijk!", "Ja, maar verander het promotionele menu", "Nee"],
       },
       {
-        q: "Recommanderiez-vous nos produits à vos amis ?",
-        a: ["Oui", "Non"],
+        q: "Zou u onze producten aanbevelen aan uw vrienden?",
+        a: ["Ja", "Nee"],
       },
     ],
   };
 
   const check = {
-    title: "Votre réponse sera examinée",
+    title: "Uw antwoord wordt beoordeeld",
     arr: [
-      "Vous avez répondu à la question 3 sur 3",
-      "Votre adresse IP ne montre pas de commandes antérieures",
-      "Votre réponse a été vérifiée",
+      "U heeft vraag 3 van 3 beantwoord",
+      "Uw IP-adres toont geen eerdere bestellingen",
+      "Uw antwoord is geverifieerd",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Merci d'avoir participé à l'enquête !",
-        button: "Tentez votre chance",
+        header: "Bedankt voor het deelnemen aan de enquête!",
+        button: "Probeer uw geluk",
         text: `
   <center>
-      Pour obtenir le menu promotionnel de McDonald's, vous devez choisir la bonne boîte cadeau.
+      Om het promotionele menu van McDonald's te verkrijgen, moet u de juiste geschenkdoos kiezen.
       <br><br>
-      Vous avez 3 tentatives, bonne chance !
+      U heeft 3 pogingen, veel succes!
   </center>
               `,
       },
     },
     first: {
       texts: {
-        header: "Oh, non...",
-        button: "Réessayez",
+        header: "Oh, nee...",
+        button: "Probeer opnieuw",
         text: `
   <center>
-      Malheureusement, ce cadeau est vide. Il vous reste deux tentatives, bonne chance !
+      Helaas is dit geschenk leeg. U heeft nog twee pogingen, veel succes!
   </center>
               `,
       },
     },
     win: {
       texts: {
-        header: "Angleterre (Équipe masculine) 2024/25 Maillot domicile du stade",
-        button: "Obtenez le coupon",
+        header: "Engeland (Mannenteam) 2024/25 Stadion Thuis Shirt",
+        button: "Krijg de coupon",
         text: `
   <center>
       <p style="color: #ffffff"></p>
       <br>
-      Cliquez sur "Obtenez le coupon", complétez le formulaire et payez la commande.
+      Klik op "Krijg de coupon", vul het formulier in en betaal de bestelling.
       <br><br>
-      Recevez un SMS avec le coupon et des instructions pour l'activer.
+      Ontvang een sms met de coupon en instructies om deze te activeren.
       <br><br>
-      Le coupon peut être activé à tout moment et ne nécessite aucun paiement supplémentaire.
+      De coupon kan op elk moment geactiveerd worden en vereist geen extra betaling.
   </center>
               `,
       },
@@ -167,69 +167,69 @@ const imageBase = baseUrl ?? landingUrl;
 
   const cartSteps = {
     personal: {
-      title: "Informations personnelles",
+      title: "Persoonlijke informatie",
       fields: {
         name: {
           enabled: true,
-          field: "Prénom",
+          field: "Voornaam",
         },
         family: {
           enabled: true,
-          field: "Nom de famille",
+          field: "Achternaam",
         },
         phone: {
           enabled: true,
-          field: "Numéro de téléphone",
+          field: "Telefoonnummer",
         },
         email: {
           enabled: true,
-          field: "Adresse e-mail",
+          field: "E-mailadres",
         },
       },
     },
     delivery: {
-      title: "Livraison",
+      title: "Levering",
       fields: {
         city: {
           enabled: true,
-          field: "Ville",
+          field: "Stad",
         },
         address: {
           enabled: true,
-          field: "Adresse de livraison",
+          field: "Leveringsadres",
         },
         zip: {
           enabled: true,
-          field: "Code postal",
+          field: "Postcode",
         },
       },
     },
     payment: {
-      title: "Méthodes de paiement",
-      creditCard: "Paiement en ligne par carte de crédit",
+      title: "Betaalmethoden",
+      creditCard: "Online betaling met creditcard",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Détails de la commande",
+      title: "Bestelgegevens",
       oldPrice: "€99.99",
       newPrice: "€9.99",
-      size: "Taille",
+      size: "Maat",
       subTotal: {
-        title: "Sous-total",
+        title: "Subtotaal",
         amount: "€9.99",
       },
       delivery: {
-        title: "Livraison",
+        title: "Levering",
         amount: "€0.00",
       },
       total: {
-        title: "Total",
+        title: "Totaal",
         amount: "€9.99",
       },
-      checkoutButton: "Payez votre commande",
+      checkoutButton: "Betaal uw bestelling",
     },
   };
 
@@ -238,26 +238,26 @@ const imageBase = baseUrl ?? landingUrl;
   const products = [
     {
       id: "26468784",
-      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
-      miniImg: "./src/img/shirt-fr.jpg",
-      images: ["./src/img/shirt-fr.jpg"],
+      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      miniImg: "./src/img/shirt-ne.jpg",
+      images: ["./src/img/shirt-ne.jpg"],
     },
     {
       id: "26468782",
-      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
-      miniImg: "./src/img/shirt-fr.jpg",
-      images: ["./src/img/shirt-fr.jpg"],
+      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      miniImg: "./src/img/shirt-ne.jpg",
+      images: ["./src/img/shirt-ne.jpg"],
     },
     {
       id: "26468783",
-      name: "FFF (Équipe Masculine) 2024/25 Match Domicile",
-      miniImg: "./src/img/shirt-fr.jpg",
-      images: ["./src/img/shirt-fr.jpg"],
+      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      miniImg: "./src/img/shirt-ne.jpg",
+      images: ["./src/img/shirt-ne.jpg"],
     },
   ];
 
   const footer = {
-    cr: "© 2024  Nike, Inc. Tous droits réservés",
+    cr: "© 2024  Nike, Inc. Alle rechten voorbehouden",
   };
 
   const pathImgBox = {
