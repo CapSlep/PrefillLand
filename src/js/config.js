@@ -14,7 +14,7 @@ const imageBase = baseUrl ?? landingUrl;
 
   const sizes = {
     enabled: false,
-    selectText: "Talla: ",
+    selectText: "Size: ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
   // I FILL THIS INFO IN MAIN.JS
