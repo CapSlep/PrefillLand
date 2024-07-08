@@ -8,8 +8,8 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "en";
-  const lang = "en-EN";
+  const countryCode = "nl";
+  const lang = "nl-NL";
   const locale = lang;
 
   const sizes = {
@@ -238,19 +238,19 @@ const imageBase = baseUrl ?? landingUrl;
   const products = [
     {
       id: "26468784",
-      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      name: "Nederland 2024/25 Stadium Thuis",
       miniImg: "./src/img/shirt-ne.jpg",
       images: ["./src/img/shirt-ne.jpg"],
     },
     {
       id: "26468782",
-      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      name: "Nederland 2024/25 Stadium Thuis",
       miniImg: "./src/img/shirt-ne.jpg",
       images: ["./src/img/shirt-ne.jpg"],
     },
     {
       id: "26468783",
-      name: "Nederland (vrouwenelftal) 2024/25 Stadium Thuis",
+      name: "Nederland 2024/25 Stadium Thuis",
       miniImg: "./src/img/shirt-ne.jpg",
       images: ["./src/img/shirt-ne.jpg"],
     },
