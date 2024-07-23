@@ -1206,6 +1206,15 @@ body {
   padding-bottom: 0.5625rem;
 }
 
+.price{
+  font-size: 18px;
+}
+
+.offer-name{
+  font-size: 20px;
+  line-height: 1.5rem;
+}
+
 .hero__price {
   font-size: 1.2rem;
   line-height: 1.15625rem;
@@ -1224,6 +1233,7 @@ body {
 
 .text {
   margin-bottom: 0.625rem;
+  text-align: center;
 }
 
 .hero__gallery {
@@ -3983,7 +3993,7 @@ video {
 	background-color: rgba(255, 255, 255, 0.35);
 	padding: 1rem 0;
 	display: flex;
-  gap: .5rem;
+  gap: 1rem;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;

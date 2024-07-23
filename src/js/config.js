@@ -217,11 +217,11 @@ const imageBase = baseUrl ?? landingUrl;
     main: {
       title: "Détails de la commande",
       oldPrice: "30,66 €",
-      newPrice: "9,99 €",
+      newPrice: "1,95 €",
       size: "Taille",
       subTotal: {
         title: "Sous-total",
-        amount: "9,99 €",
+        amount: "1,95 €",
       },
       delivery: {
         title: "Livraison",
@@ -229,7 +229,7 @@ const imageBase = baseUrl ?? landingUrl;
       },
       total: {
         title: "Total",
-        amount: "9,99 €",
+        amount: "1,95 €",
       },
       checkoutButton: "Payer votre commande",
     },
