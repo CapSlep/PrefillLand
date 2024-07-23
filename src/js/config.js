@@ -216,7 +216,7 @@ const imageBase = baseUrl ?? landingUrl;
     steps: cartSteps,
     main: {
       title: "Détails de la commande",
-      oldPrice: "99,99 €",
+      oldPrice: "30,66 €",
       newPrice: "9,99 €",
       size: "Taille",
       subTotal: {
