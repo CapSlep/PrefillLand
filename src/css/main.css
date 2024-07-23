@@ -1665,7 +1665,7 @@ body {
 }
 
 .no-webp .box__inner {
-  background: url(".//box-inner.png") no-repeat center/contain;
+  background: url("../img/box-inner.png") no-repeat center/contain;
 }
 
 .box__inner {
@@ -1678,7 +1678,7 @@ body {
 }
 
 .no-webp .box__front {
-  background: url(".//box.png") no-repeat center/contain;
+  background: url("../img/box.png") no-repeat center/contain;
 }
 
 .box__front {
@@ -2123,7 +2123,7 @@ body {
 }
 
 .no-webp .notifications__text-ok {
-  background: url(".//notification-ok.png") no-repeat center/contain;
+  background: url("../img/notification-ok.png") no-repeat center/contain;
 }
 
 .notifications__text-ok {
@@ -2139,7 +2139,7 @@ body {
 }
 
 .no-webp .notifications__close {
-  background: url(".//notification-close.png") no-repeat center/contain;
+  background: url("../img/notification-close.png") no-repeat center/contain;
 }
 
 .notifications__close {
@@ -2567,19 +2567,19 @@ body {
 }
 
 .box__inner {
-  background: url(.//box-inner.png) no-repeat center/contain;
+  background: url(../img/box-inner.png) no-repeat center/contain;
 }
 
 .box__front {
-  background: url(.//box.png) no-repeat center/contain;
+  background: url(../img/box.png) no-repeat center/contain;
 }
 
 .notifications__text-ok {
-  background: url(.//notification-ok.png) no-repeat center/contain;
+  background: url(../img/notification-ok.png) no-repeat center/contain;
 }
 
 .notifications__close {
-  background: url(.//notification-close.png) no-repeat center/contain;
+  background: url(../img/notification-close.png) no-repeat center/contain;
 }
 
 @media (min-width: 768px) {
@@ -2599,7 +2599,7 @@ hr {
 }
 
 .mt-2 {
-  /* margin-top: 0.5rem !important; */
+  margin-top: 0.5rem !important;
 }
 
 .mb-2 {
@@ -2665,7 +2665,7 @@ hr {
 .ratingbox {
   align-content: stretch;
   align-items: stretch;
-  background-color:#000;
+  background-color:#ececec;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -2731,7 +2731,7 @@ hr {
   line-height: 20px;
   text-rendering: optimizelegibility;
   white-space: normal;
-  color: #ffffff;
+  color: #000000;
 }
 
 .starsbox {
@@ -3454,8 +3454,8 @@ button:not(:disabled) {
     max-width: -moz-fit-content;
     max-width: fit-content;
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: #FFD814;
+    color: #000000;
   }
 }
 
@@ -3533,8 +3533,8 @@ video {
 
   .submit-shipping {
     margin-top: 1rem !important;
-    background: #000;
-    color: #fff;
+    background: #FFD814;
+    color: #000000;
     /*///////////*/
     font-weight: 900;
     /*  this does not work, go to index html and find "submitButton" there you can change it */
@@ -3976,3 +3976,55 @@ video {
 }
 
 /* END Size Selection */
+
+
+/* START Timer Section */
+#timer {
+	background-color: rgba(255, 255, 255, 0.35);
+	padding: 1rem 0;
+	display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  border-bottom: 2px solid #e9e9e9;
+}
+
+#timer > .text {
+	color: #ef151e;
+	font-weight: 600;
+}
+
+#timer > .timer {
+	font-size: 38px;
+	font-weight: 600;
+	display: flex;
+	list-style-type: decimal-leading-zero;
+	padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+#timer > .timer > .free {
+	color: #ff8732;
+}
+
+#timerHour,#timerMin,#timerSec {
+	position: relative;
+}
+#timerHour:after,#timerMin:after,#timerSec:after {
+	position: absolute;
+	top: 24px;
+	font-size: 20px;
+	left: calc(50% - 5px);
+}
+#timerHour:after {
+	content: 'h';
+}
+#timerMin:after {
+	content: 'm';
+}
+#timerSec:after {
+	content: 's';
+}
+
+/* END Timer Section */

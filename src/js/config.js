@@ -8,16 +8,16 @@ const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
 (function (exp) {
-  const countryCode = "nl";
-  const lang = "nl-NL";
+  const countryCode = "fr";
+  const lang = "fr-FR";
   const locale = lang;
 
   const sizes = {
     enabled: false,
-    selectText: "Maat: ",
+    selectText: "Taille : ",
     arr: ["XS", "S", "M", "M/L", "L", "L/XL", "XL", "XXL"],
   };
-  // IK VUL DEZE INFORMATIE IN IN MAIN.JS
+
   const mainProduct = {
     header: "",
     name: "",
@@ -25,240 +25,229 @@ const imageBase = baseUrl ?? landingUrl;
     newPrice: "",
     selectText: "",
     coupon: "",
-    text: `,
-  Gefeliciteerd!<br><br>
-  U heeft deelgenomen aan de Stanley promotie: u heeft de kans om de STANLEY QUENCHER H2.0 thermos met ijsmal te kopen voor slechts <b>37$</b>!
+    timer: "Vous ne pouvez commander qu'un seul paquet au prix promotionnel cette semaine.",
+    text: `
+  Félicitations!<br><br>
+  Vous avez participé à la promotion Stanley : vous avez la chance d'acheter la thermos STANLEY QUENCHER H2.0 avec moule à glace pour seulement <b>37$</b> !
   `,
   };
 
   const notifications = [
-    // {
-    // 	user: "Manuel S*****",
-    // 	location: "Barcelona, España",
-    // 	action: "Ik heb zojuist het sieraad ontvangen voor 1,95 euro!",
-    // 	timeago: "15 seconden geleden",
-    // },
-    // {
-    // 	user: "Carlos B******",
-    // 	location: "Madrid, España",
-    // 	action: "Ik heb zojuist het sieraad ontvangen voor 1,95 euro!",
-    // 	timeago: "25 seconden geleden",
-    // },
+    {
+      user: "Manuel S*****",
+      location: "Paris, France",
+      action: "Je viens de recevoir le bijou pour 1,95 euro !",
+      timeago: "il y a 15 secondes",
+    },
+    {
+      user: "Carlos B******",
+      location: "Marseille, France",
+      action: "Je viens de recevoir le bijou pour 1,95 euro !",
+      timeago: "il y a 25 secondes",
+    },
   ];
 
   const reviewsArr = [
     {
-      name: "Mateo",
-      time: "Een dag geleden",
-      header: "Het is ongelooflijk!",
-      product: "26468782",
-      review: "Als voetbalfan sinds vele jaren was ik zeer verrast door de kwaliteit van het nationale teamshirt van Spanje voor een zeer redelijke prijs 😊",
+      name: "Sophie R.",
+      time: "Il y a un jour",
+      header: "Cette litière est vraiment incroyable.",
+      image: "./src/img/review_1.jpg",
+      review: "J'ai deux chats qui lâchent des monstres quand ils vont à la litière, et ils y vont TRES souvent. Après avoir testé bien des litières, celle-ci est vraiment la meilleure possible. Après s'être habitué-e à l'odeur de paille (forcément puisque naturelle et c'est pas plus mal), on est ravi-e. Elle absorbe super bien et surtout masque ABSOLUMENT toutes les odeurs très rapidement, contrairement à toutes les autres que j'ai pu tester (et j'ai fait le tour). Seul bémol, depuis quelques temps maintenant, elle est que très peu disponible sur Amazon car toujours en rupture ou que sais-je. C'est dommage, mais je me rabattrai sur une animalerie qui livre la prochaine fois, c'est pas pratique de devoir sauter dessus quand elle est dispo pour prévoir le stock alors qu'on vient d'en acheter une autre pour compenser.",
     },
     {
-      name: "Lucas",
-      time: "Twee dagen geleden",
-      header: "Geweldig! Ik heb geen woorden.",
-      product: "26468789",
-      review: "Ik besloot voor het eerst het nationale teamshirt van Spanje te kopen en nu geniet ik ervan elke keer als ik mijn team steun, dank je.",
+      name: "Alexandre",
+      time: "Il y a deux jours",
+      header: "C'est la meilleure litière à ma connaissance.",
+      image: "./src/img/review_2.jpg",
+      review: "Absorbe les odeurs, on retire les excréments au fur et à mesure que l'on vide dans les sanitaires. Le reste va dans le compost. 👌",
     },
     {
-      name: "Valentina",
-      time: "Twee dagen geleden",
-      header: "Gewoon geweldig.",
-      product: "26468785",
-      review: "De kwaliteit van het shirt is ongelooflijk, en de maat is perfect! Dank je, ik zal het aan mijn vrienden aanbevelen.",
+      name: "Cozic Raphael",
+      time: "Il y a deux jours",
+      header: "Simplement incroyable.",
+      image: "./src/img/review_3.jpg",
+      review: "De loin C’est de loin la meilleure litière végétale qu’il existe , mon chat ne veut pas autre chose , absorbe bien , neutralise les odeurs à condition de débarrasser tout les jours les boules d’urines et les caca . J’aime aussi le fait qu’avec la pelle on peut jeter au toilette , une chasse d’eau et hop tout s’en va . Pas besoin de sac et de stocker dans les poubelles . Vite évacuer .",
     },
     {
-      name: "Santiago",
-      time: "Vier dagen geleden",
-      header: "Ik vind het leuk",
-      review: "Eerlijk gezegd hou ik van voetbal kijken, en het nieuwe nationale teamshirt van Spanje was precies wat ik nodig had.",
+      name: "Hyper Efficace",
+      time: "Il y a quatre jours",
+      header: "J'aime ça",
+      image: "./src/img/review_4.jpg",
+      review: "Agglomère bien sans faire soupe. Ne colle pas trop au fond contrairement à d'autres types de litière. <br> Transport parfait",
     },
     {
-      name: "Martina",
-      time: "Zeven dagen geleden",
-      header: "Wauw, ik hou van dit product!",
-      product: "26468784",
-      review: "Eerst dacht ik dat het shirt duur was, maar gelukkig heb ik het gekocht en nu geniet ik van de beste wedstrijden met het. Dank je!",
+      name: "Bour Laurent",
+      time: "Il y a sept jours",
+      header: "Wow, j'adore ce produit !",
+      image: "./src/img/review_5.jpg",
+      review: "Après avoir essayé de multiples types de litière, celle-ci est celle qui convient le mieux. Prix intéressant sur ce packaging grand modèle de 40L.",
     },
   ];
 
   const reviews = {
     reviews: reviewsArr,
-    rr: "BEOORDELINGEN EN RECENSIES",
+    rr: "ÉVALUATIONS ET AVIS",
     percent: "99%",
-    rec: "Opmerkingen over deze promotie",
+    rec: "Commentaires sur cette promotion",
   };
 
   const questions = {
-    _of: "Vraag {1} van {2}: ",
+    _of: "Question {1} sur {2} :",
     arr: [
       {
-        q: "Heeft u ooit producten van McDonald's besteld?",
+        q: "Avez-vous déjà commandé des produits McDonald's ?",
         a: [
-          "Ja, ik bestel vaak",
-          "Ja, ik bestel zelden",
-          "Ik heb nog nooit besteld",
+          "Oui, je commande souvent",
+          "Oui, je commande rarement",
+          "Je n'ai jamais commandé",
         ],
       },
       {
-        q: "Moet McDonald's doorgaan met dit soort reclamecampagnes?",
-        a: ["Ja, natuurlijk!", "Ja, maar verander het promotionele menu", "Nee"],
+        q: "McDonald's devrait-il continuer ce type de campagnes publicitaires ?",
+        a: ["Oui, bien sûr !", "Oui, mais changez le menu promotionnel", "Non"],
       },
       {
-        q: "Zou u onze producten aanbevelen aan uw vrienden?",
-        a: ["Ja", "Nee"],
+        q: "Recommanderiez-vous nos produits à vos amis ?",
+        a: ["Oui", "Non"],
       },
     ],
   };
 
   const check = {
-    title: "Uw antwoord wordt beoordeeld",
+    title: "Votre réponse est en cours d'évaluation",
     arr: [
-      "U heeft vraag 3 van 3 beantwoord",
-      "Uw IP-adres toont geen eerdere bestellingen",
-      "Uw antwoord is geverifieerd",
+      "Vous avez répondu à la question 3 sur 3",
+      "Votre adresse IP ne montre aucune commande précédente",
+      "Votre réponse a été vérifiée",
     ],
   };
 
   const modals = {
     welcome: {
       texts: {
-        header: "Bedankt voor het deelnemen aan de enquête!",
-        button: "Probeer uw geluk",
+        header: "Merci d'avoir participé au sondage !",
+        button: "Essayez votre chance",
         text: `
-  <center>
-      Om het promotionele menu van McDonald's te verkrijgen, moet u de juiste geschenkdoos kiezen.
+      <center>
+      Pour obtenir le menu promotionnel de McDonald's, vous devez choisir la bonne boîte-cadeau.
       <br><br>
-      U heeft 3 pogingen, veel succes!
-  </center>
-              `,
+      Vous avez 3 tentatives, bonne chance !
+      </center>
+    `,
       },
     },
     first: {
       texts: {
-        header: "Oh, nee...",
-        button: "Probeer opnieuw",
+        header: "Oh non...",
+        button: "Réessayer",
         text: `
-  <center>
-      Helaas is dit geschenk leeg. U heeft nog twee pogingen, veel succes!
-  </center>
-              `,
+      <center>
+      Malheureusement, cette boîte-cadeau est vide. Il vous reste deux tentatives, bonne chance !
+      </center>
+    `,
       },
     },
     win: {
       texts: {
-        header: "Engeland (Mannenteam) 2024/25 Stadion Thuis Shirt",
-        button: "Krijg de coupon",
+        header: "Maillot Domicile de l'Équipe de France (Hommes) 2024/25",
+        button: "Obtenez le coupon",
         text: `
-  <center>
+      <center>
       <p style="color: #ffffff"></p>
       <br>
-      Klik op "Krijg de coupon", vul het formulier in en betaal de bestelling.
+      Cliquez sur "Obtenez le coupon", remplissez le formulaire et payez la commande.
       <br><br>
-      Ontvang een sms met de coupon en instructies om deze te activeren.
+      Recevez un SMS avec le coupon et des instructions pour l'activer.
       <br><br>
-      De coupon kan op elk moment geactiveerd worden en vereist geen extra betaling.
-  </center>
-              `,
+      Le coupon peut être activé à tout moment et ne nécessite aucun paiement supplémentaire.
+      </center>
+    `,
       },
     },
   };
 
   const cartSteps = {
     personal: {
-      title: "Persoonlijke informatie",
+      title: "Informations personnelles",
       fields: {
         name: {
           enabled: true,
-          field: "Voornaam",
+          field: "Prénom",
         },
         family: {
           enabled: true,
-          field: "Achternaam",
+          field: "Nom de famille",
         },
         phone: {
           enabled: true,
-          field: "Telefoonnummer",
+          field: "Numéro de téléphone",
         },
         email: {
           enabled: true,
-          field: "E-mailadres",
+          field: "Adresse e-mail",
         },
       },
     },
     delivery: {
-      title: "Levering",
+      title: "Livraison",
       fields: {
         city: {
           enabled: true,
-          field: "Stad",
+          field: "Ville",
         },
         address: {
           enabled: true,
-          field: "Leveringsadres",
+          field: "Adresse de livraison",
         },
         zip: {
           enabled: true,
-          field: "Postcode",
+          field: "Code postal",
         },
       },
     },
     payment: {
-      title: "Betaalmethoden",
-      creditCard: "Online betaling met creditcard",
+      title: "Modes de paiement",
+      creditCard: "Paiement en ligne par carte de crédit",
     },
   };
 
   const cart = {
     steps: cartSteps,
     main: {
-      title: "Bestelgegevens",
-      oldPrice: "€99.99",
-      newPrice: "€9.99",
-      size: "Maat",
+      title: "Détails de la commande",
+      oldPrice: "99,99 €",
+      newPrice: "9,99 €",
+      size: "Taille",
       subTotal: {
-        title: "Subtotaal",
-        amount: "€9.99",
+        title: "Sous-total",
+        amount: "9,99 €",
       },
       delivery: {
-        title: "Levering",
-        amount: "€0.00",
+        title: "Livraison",
+        amount: "0,00 €",
       },
       total: {
-        title: "Totaal",
-        amount: "€9.99",
+        title: "Total",
+        amount: "9,99 €",
       },
-      checkoutButton: "Betaal uw bestelling",
+      checkoutButton: "Payer votre commande",
     },
   };
-
-
 
   const products = [
     {
       id: "26468784",
-      name: "Nederland 2024/25 Stadium Thuis",
-      miniImg: "./src/img/shirt-ne.jpg",
-      images: ["./src/img/shirt-ne.jpg"],
-    },
-    {
-      id: "26468782",
-      name: "Nederland 2024/25 Stadium Thuis",
-      miniImg: "./src/img/shirt-ne.jpg",
-      images: ["./src/img/shirt-ne.jpg"],
-    },
-    {
-      id: "26468783",
-      name: "Nederland 2024/25 Stadium Thuis",
-      miniImg: "./src/img/shirt-ne.jpg",
-      images: ["./src/img/shirt-ne.jpg"],
+      name: "Cat’s Best Original - litière pour chats agglutinante - 40L / 17.2kg",
+      miniImg: "./src/img/slide1.jpg",
+      images: ["./src/img/slide1.jpg"],
     },
   ];
 
   const footer = {
-    cr: "© 2024  Nike, Inc. Alle rechten voorbehouden",
+    cr: "© 2024 Amazon. Tous droits réservés.",
   };
+
 
   const pathImgBox = {
     lid: "./src/img/box-lid.png",

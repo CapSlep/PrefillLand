@@ -508,6 +508,10 @@ setTimeout(() => {
   if (true) {
     openCheckout();
     checkoutInit();
+    ratingInit();
+    reviewsInit();
+    notificationsInit();
+    timerInit();
   } else {
     openMain();
     // mainInit();
