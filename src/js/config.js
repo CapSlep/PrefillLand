@@ -51,39 +51,40 @@ const siteKey = "4-AirTags-fr";
 
   const reviewsArr = [
     {
-      name: "Frank Columbo",
+      name: "Naksuko",
       time: "Il y a un jour",
       header: "Cette litière est vraiment incroyable.",
       image: "./src/img/review_1.jpg",
-      review: `Et voici encore un produit Apple parfaitement réfléchi, et conçu avec en tête la SIMPLICITÉ d'utilisation.L'aspect PLUG & PLAY est vraiment des plus aboutis, et ça on apprécie grandement.En gros, on ouvre la boite et instantanément ça marche sans aucun effort.`,
+      review: `Très contente de ces écouteurs. Grâce à l’appli, on peut les régler et les personnaliser de plein de façons, on peut se créer son propre égaliseur de son, bref c’est vraiment chouette!
+L’autonomie des écouteurs est très longue, ajoutée à la batterie du boitier, ça fait quelques heures d’écoute de musique ou de vidéo!`,
     },
     {
-      name: "Julien.P",
+      name: "Vandermarliere",
       time: "Il y a deux jours",
       header: "C'est la meilleure litière à ma connaissance.",
       image: "./src/img/review_2.jpg",
-      review: "Pour avoir essayé des tags de sous marque les airtags sont ce qu'il se fait se mieux dans le domaine. Couplage auto et rapide. Durée de la pile assez énorme.On va arriver à presque deux ans pour mon premier airtag.",
+      review: "Parfait pour mes oreilles et le confort n'est pas à plaindre, ma copine étant sensible aux bruits forts, avec la fonction anti bruit de l'application JBL, cela fonctionne à merveille !! Le son est bon la qualité est top je recommande !!",
     },
     {
-      name: "vréni",
+      name: "Will",
       time: "Il y a deux jours",
       header: "Simplement incroyable.",
       image: "./src/img/review_3.jpg",
-      review: "utile pour pister des objets égarés comme un vélo , un sac ...fonctionne si il y a des gens avec des IPhone à proximité ...parfait en ville mais pas bon dans les endroits déserts ( campagne , montagne ...). Utile aussi pour pister un chien fugueur. pas cher pour le service rendu , donc bon achat",
+      review: "Bonne marque facile à installer, ergonomique",
     },
     {
-      name: "Skimar",
+      name: "Jenn Caps",
       time: "Il y a quatre jours",
       header: "J'aime ça",
-      image: "./src/img/review_4.jpg",
-      review: "Très facile à configurer, quelques secondes suffisent. Possibilité de partager l'appareil avec d'autres personnes pour que elles aussi aient accès à la localisation. La pile se change aussi facilement mais il faudra un tuto YouTube pour savoir comment faire, ce n'est écrit nulle part. Très bien pour un trousseau de clé certes mais également pour les chiens ou chats qui sortent dehors, à glisser dans le sac de son enfant pour les premiers aller retours seul jusqu'à l'école.",
+      // image: "./src/img/review_4.jpg",
+      review: "Bon rapport qualité prix. Rien a dire. Bon son, tactile, charge rapide.",
     },
     {
-      name: "yvan jouffrey",
+      name: "Sissi7193",
       time: "Il y a sept jours",
       header: "Wow, j'adore ce produit !",
-      image: "./src/img/review_5.jpg",
-      review: "Pour les têtes en l’air comme moi, l’Apple AirTag est une véritable bénédiction. J’en ai mis un sur mes clés et un autre dans ma pochette de Mac. Sans lui, j’aurais probablement perdu mon Mac, mais heureusement, j’ai reçu une notification sur mon iPhone m’indiquant que je l’avais oublié. J’ai même caché un AirTag dans mon vélo (il existe des astuces pour désactiver le son d’alarme, ce qui le rend presque indétectable) et il me sert d’antivol.",
+      // image: "./src/img/review_5.jpg",
+      review: "Cool bon rapport qualité prix un peu gros pour mes oreilles bon son a réglé dans l'appli",
     },
   ];
 
@@ -241,8 +242,8 @@ const siteKey = "4-AirTags-fr";
     {
       id: "26468784",
       name: "Apple Lot de 4 AirTags",
-      miniImg: "./src/img/price-4airtags.png",
-      images: ["./src/img/price-4airtags.png"],
+      miniImg: "./src/img/price-jbl.png",
+      images: ["./src/img/price-jbl.png"],
     },
   ];
 
