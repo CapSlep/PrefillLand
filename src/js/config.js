@@ -7,7 +7,7 @@ const baseHref = window.location.protocol + "//" + window.location.host;
 const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
-const siteKey = "airtag-fr";
+const siteKey = "4-AirTags-fr";
 
 (function (exp) {
   const countryCode = "fr";
@@ -38,52 +38,52 @@ const siteKey = "airtag-fr";
     {
       user: "Manuel S*****",
       location: "Paris, France",
-      action: "Je viens de recevoir le bijou pour 1,95 euro !",
+      action: "Je viens de recevoir le bijou pour 9,99 euro !",
       timeago: "il y a 15 secondes",
     },
     {
       user: "Carlos B******",
       location: "Marseille, France",
-      action: "Je viens de recevoir le bijou pour 1,95 euro !",
+      action: "Je viens de recevoir le bijou pour 9,99 euro !",
       timeago: "il y a 25 secondes",
     },
   ];
 
   const reviewsArr = [
     {
-      name: "Aida",
+      name: "Frank Columbo",
       time: "Il y a un jour",
       header: "Cette litière est vraiment incroyable.",
       image: "./src/img/review_1.jpg",
-      review: `Il donne bien la localisation des objets auxquels il est associé. On les voit dans l'application "Localiser" de l'iPhone et j'aime beaucoup cela pour ne rien perdre ou même trouver les clés quand je ne les vois pas à la maison.`,
+      review: `Et voici encore un produit Apple parfaitement réfléchi, et conçu avec en tête la SIMPLICITÉ d'utilisation.L'aspect PLUG & PLAY est vraiment des plus aboutis, et ça on apprécie grandement.En gros, on ouvre la boite et instantanément ça marche sans aucun effort.`,
     },
     {
-      name: "DAVID P",
+      name: "Julien.P",
       time: "Il y a deux jours",
       header: "C'est la meilleure litière à ma connaissance.",
       image: "./src/img/review_2.jpg",
-      review: "Prix défiant toute concurrence sur amazon pour cet AirTag :-) Bien sûr fonctionnel et très utile",
+      review: "Pour avoir essayé des tags de sous marque les airtags sont ce qu'il se fait se mieux dans le domaine. Couplage auto et rapide. Durée de la pile assez énorme.On va arriver à presque deux ans pour mon premier airtag.",
     },
     {
-      name: "Jacques",
+      name: "vréni",
       time: "Il y a deux jours",
       header: "Simplement incroyable.",
       image: "./src/img/review_3.jpg",
-      review: "J'ai récemment acheté trois Apple AirTags, et je suis absolument ravi de cet achat ! 🎉📍 Ces petits appareils sont incroyablement pratiques et faciles à utiliser. Leur configuration a été un jeu d'enfant avec mon iPhone, et ils se sont connectés en quelques secondes. 📱🔗",
+      review: "utile pour pister des objets égarés comme un vélo , un sac ...fonctionne si il y a des gens avec des IPhone à proximité ...parfait en ville mais pas bon dans les endroits déserts ( campagne , montagne ...). Utile aussi pour pister un chien fugueur. pas cher pour le service rendu , donc bon achat",
     },
     {
-      name: "mikael",
+      name: "Skimar",
       time: "Il y a quatre jours",
       header: "J'aime ça",
       image: "./src/img/review_4.jpg",
-      review: "Comme tous les produits de la marque, l'AirTag est élégant, facile à utiliser et bien conçu. Son appairage avec l'iPhone est simple et rapide. La précision de localisation est impressionnante grâce à la technologie Ultra Wideband, et l'autonomie de la pile est d'environ un an. Malgré le coût un peu élevé, sa durabilité et son efficacité en font un bon investissement. Attention, il n'est compatible qu'avec l'écosystème Apple et nécessite un accessoire pour le fixer. Idéal pour retrouver clés, sacs ou colliers d'animaux.",
+      review: "Très facile à configurer, quelques secondes suffisent. Possibilité de partager l'appareil avec d'autres personnes pour que elles aussi aient accès à la localisation. La pile se change aussi facilement mais il faudra un tuto YouTube pour savoir comment faire, ce n'est écrit nulle part. Très bien pour un trousseau de clé certes mais également pour les chiens ou chats qui sortent dehors, à glisser dans le sac de son enfant pour les premiers aller retours seul jusqu'à l'école.",
     },
     {
-      name: "Renard Laurent",
+      name: "yvan jouffrey",
       time: "Il y a sept jours",
       header: "Wow, j'adore ce produit !",
       image: "./src/img/review_5.jpg",
-      review: "Je l’utilise pour protéger mon matériel parce qu’on peut le dissiper pratiquement n’importe où. Ça doit être aussi très pratique pour les gens qui ont des vélos des motos ou des Quad, je vais sûrement en racheter l’autre. Le prix est correct. Le système de suivi GPS fonctionne assez bien même si parfois il est un peu long à se déclencher, je le recommande",
+      review: "Pour les têtes en l’air comme moi, l’Apple AirTag est une véritable bénédiction. J’en ai mis un sur mes clés et un autre dans ma pochette de Mac. Sans lui, j’aurais probablement perdu mon Mac, mais heureusement, j’ai reçu une notification sur mon iPhone m’indiquant que je l’avais oublié. J’ai même caché un AirTag dans mon vélo (il existe des astuces pour désactiver le son d’alarme, ce qui le rend presque indétectable) et il me sert d’antivol.",
     },
   ];
 
@@ -218,12 +218,12 @@ const siteKey = "airtag-fr";
     steps: cartSteps,
     main: {
       title: "Détails de la commande",
-      oldPrice: "27,40 €",
-      newPrice: "1,95 €",
+      oldPrice: "89,90 €",
+      newPrice: "9,99 €",
       size: "Taille",
       subTotal: {
         title: "Sous-total",
-        amount: "1,95 €",
+        amount: "9,99 €",
       },
       delivery: {
         title: "Livraison",
@@ -231,7 +231,7 @@ const siteKey = "airtag-fr";
       },
       total: {
         title: "Total",
-        amount: "1,95 €",
+        amount: "9,99 €",
       },
       checkoutButton: "Payer votre commande",
     },
@@ -240,9 +240,9 @@ const siteKey = "airtag-fr";
   const products = [
     {
       id: "26468784",
-      name: "Apple AirTag",
-      miniImg: "./src/img/price-airtag.png",
-      images: ["./src/img/price-airtag.png"],
+      name: "Apple Lot de 4 AirTags",
+      miniImg: "./src/img/price-4airtags.png",
+      images: ["./src/img/price-4airtags.png"],
     },
   ];
 
