@@ -241,7 +241,7 @@ L’autonomie des écouteurs est très longue, ajoutée à la batterie du boitie
   const products = [
     {
       id: "26468784",
-      name: "Apple Lot de 4 AirTags",
+      name: "JBL Wave Beam, Écouteurs Intra-Auriculaires sans Fil",
       miniImg: "./src/img/price-jbl.png",
       images: ["./src/img/price-jbl.png"],
     },
