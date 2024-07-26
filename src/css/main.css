@@ -2613,7 +2613,7 @@ hr {
 }
 
 .mb-2 {
-  /* margin-bottom: 0.5rem !important; */
+  margin-bottom: 0.5rem !important;
 }
 
 .productVariants {
@@ -4038,3 +4038,60 @@ video {
 }
 
 /* END Timer Section */
+
+/* ==========================MODAL========================== */
+
+.start__modal{
+  text-align: right;
+}
+
+.modal__header-container{
+  display: flex;
+  
+  justify-content: right;
+  align-items: center;
+}
+
+.modal__img-container{
+  text-align: center;
+}
+.modal__img-container img{
+  text-align: center;
+  
+  max-width: 50%;
+}
+
+
+.modal__header-title{
+  color: gray;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.modal__cross{
+  width: 2rem;
+  height: 2rem;
+  background-image: url(../img/crosspng.png);
+  background-size: contain;
+}
+
+.modal__text-start{
+  color: #000000;
+  margin-top: 2rem;
+  font-size: 24px;
+  line-height: 1.5rem;
+  text-align: center;
+}
+
+.modal__button-start{
+  background: #FFC426; 
+  color: black;
+  border-radius: .5rem;
+}
+
+@media (max-width: 510px) {
+  .start__modal {
+    max-width: 90%;
+    margin: 10px;
+  }
+}

@@ -503,12 +503,30 @@ const mainInit = () => {
   //notificationsInit();
 };
 
+
+function modalPopup() {
+
+  const modalStart = document.getElementById('modalStart');
+  const modalExits = document.querySelectorAll("#modalExit");
+
+  const startImage = document.getElementById("startImage");
+  startImage.setAttribute("src", "./src/img/popup.png");
+
+  modalExits.forEach((exit) => {
+    exit.addEventListener('click', () => {
+      modalStart.style.display = 'none';
+    });
+  });
+}
+
 setTimeout(() => {
+  starupCheck();
   // if (localStorage.getItem("__is_checkout") != null) {
   if (true) {
     openCheckout();
     checkoutInit();
     ratingInit();
+    modalPopup();
     reviewsInit();
     notificationsInit();
     timerInit();

