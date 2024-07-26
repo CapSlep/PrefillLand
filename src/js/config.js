@@ -7,7 +7,7 @@ const baseHref = window.location.protocol + "//" + window.location.host;
 const landingUrl = baseHref + window.location.pathname;
 const imageBase = baseUrl ?? landingUrl;
 
-const siteKey = "4-AirTags-fr";
+const siteKey = "JBLGO3-fr";
 
 (function (exp) {
   const countryCode = "fr";
@@ -51,40 +51,39 @@ const siteKey = "4-AirTags-fr";
 
   const reviewsArr = [
     {
-      name: "Naksuko",
+      name: "Louloute",
       time: "Il y a un jour",
       header: "Cette litière est vraiment incroyable.",
       image: "./src/img/review_1.jpg",
-      review: `Très contente de ces écouteurs. Grâce à l’appli, on peut les régler et les personnaliser de plein de façons, on peut se créer son propre égaliseur de son, bref c’est vraiment chouette!
-L’autonomie des écouteurs est très longue, ajoutée à la batterie du boitier, ça fait quelques heures d’écoute de musique ou de vidéo!`,
+      review: `Elle est top! Le plus c est la qualité du son le petit format très pratique la marque et le prix merci Amazon`,
     },
     {
-      name: "Vandermarliere",
+      name: "JEAN MARC",
       time: "Il y a deux jours",
       header: "C'est la meilleure litière à ma connaissance.",
       image: "./src/img/review_2.jpg",
-      review: "Parfait pour mes oreilles et le confort n'est pas à plaindre, ma copine étant sensible aux bruits forts, avec la fonction anti bruit de l'application JBL, cela fonctionne à merveille !! Le son est bon la qualité est top je recommande !!",
+      review: "Son très bon, design parfait, fonctionnalités simples. Les basses sont bien présentes et la longévité de la batterie est conforme à la description. Le rapport qualité/prix est parfait donc je recommande.",
     },
     {
-      name: "Will",
+      name: "Brice",
       time: "Il y a deux jours",
       header: "Simplement incroyable.",
       image: "./src/img/review_3.jpg",
-      review: "Bonne marque facile à installer, ergonomique",
+      review: "Enceinte très pratique par sa petite taille avec un excellent son et un beau design !",
     },
     {
-      name: "Jenn Caps",
+      name: "Yoann",
       time: "Il y a quatre jours",
       header: "J'aime ça",
-      // image: "./src/img/review_4.jpg",
-      review: "Bon rapport qualité prix. Rien a dire. Bon son, tactile, charge rapide.",
+      image: "./src/img/review_4.jpg",
+      review: "Bien reçu marche très bien rien a dire 😎👍",
     },
     {
-      name: "Sissi7193",
+      name: "Benoit M",
       time: "Il y a sept jours",
       header: "Wow, j'adore ce produit !",
-      // image: "./src/img/review_5.jpg",
-      review: "Cool bon rapport qualité prix un peu gros pour mes oreilles bon son a réglé dans l'appli",
+      image: "./src/img/review_5.jpg",
+      review: "Cette enceinte a un rapport qualité prix exceptionnel. En effet a se prix là,rien de comparable de disponible sur le marché. La marque n'a plus rien à prouver, le son est d'excellente qualité pour une enceinte de ce gabarit, elle est étanche et la batterie tient plusieurs heures.",
     },
   ];
 
@@ -219,7 +218,7 @@ L’autonomie des écouteurs est très longue, ajoutée à la batterie du boitie
     steps: cartSteps,
     main: {
       title: "Détails de la commande",
-      oldPrice: "89,90 €",
+      oldPrice: "33,99 €",
       newPrice: "9,99 €",
       size: "Taille",
       subTotal: {
@@ -241,9 +240,9 @@ L’autonomie des écouteurs est très longue, ajoutée à la batterie du boitie
   const products = [
     {
       id: "26468784",
-      name: "JBL Wave Beam, Écouteurs Intra-Auriculaires sans Fil",
-      miniImg: "./src/img/price-jbl.png",
-      images: ["./src/img/price-jbl.png"],
+      name: "JBL GO 3",
+      miniImg: "./src/img/price-jblgo3.png",
+      images: ["./src/img/price-jblgo3.png"],
     },
   ];
 
